@@ -9,6 +9,7 @@ let bg;
 let yellow;
 
 async function setup() {
+  frameRate(24)
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 1, 1, 1);
   noStroke();
