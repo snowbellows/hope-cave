@@ -66,7 +66,7 @@ let f2X, f2Y, f2W, f2HMod;
 let started;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 1, 1, 1);
   noStroke();
   bg = color(80.54973, 0.34965333, 0.106082216, 1);
@@ -108,13 +108,13 @@ function draw() {
     fUpdated = 0;
     fX = random(-1, 1);
     fY = random(-1, 1);
-    fW = random(3, 5);
+    fW = random(1, 4);
     fHMod = random(-1, +1);
     f2X = random(-1, 1);
     f2Y = random(-1, 1);
 
-    f2W = random(32, 38);
-    f2HMod = random(-4, +4);
+    f2W = random(14, 16);
+    f2HMod = random(-2, +2);
   });
 
   ellipse(fX, fY, fW, fW - fHMod);
