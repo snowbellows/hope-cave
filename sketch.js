@@ -91,18 +91,18 @@ function draw() {
   // rotation = frameCount / 200;
   rotate(rotation);
 
-  if (eCycles === 1) {
-    const capture = P5Capture.getInstance();
-    if (capture.state === 'idle') {
-      capture.start({ format: 'mp4', framerate: 24, bitrate: 24000 });
-    }
-  }
+  // if (eCycles === 1) {
+  //   const capture = P5Capture.getInstance();
+  //   if (capture.state === 'idle') {
+  //     capture.start({ format: 'mp4', framerate: 24, bitrate: 24000 });
+  //   }
+  // }
 
-  if (eCycles === 2) {
-    const capture = P5Capture.getInstance();
-    if (capture.state === "capturing") {
-    capture.stop();}
-  }
+  // if (eCycles === 2) {
+  //   const capture = P5Capture.getInstance();
+  //   if (capture.state === "capturing") {
+  //   capture.stop();}
+  // }
 
   fDT = fDT.updateAnd(deltaTime, () => {
     fUpdated = 0;
